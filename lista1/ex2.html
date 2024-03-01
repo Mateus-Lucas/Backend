@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+
+    <script>
+
+        const eleitores = Number(prompt('Informe o números de eleitores: '))
+        const brancos = Number(prompt('Informe o números de votos em branco: '))
+        const nulos = Number(prompt('Informe o números de votos nulos: '))
+        const validos = Number(prompt('Informe o números de votos válidos: '))
+
+        const soma = brancos + nulos + validos
+
+
+
+        if (soma > eleitores) {
+            console.log('Número inválido para votos');
+        } else {
+            console.log(`Percentual de votos brancos: ${(brancos/eleitores)*100}%`);
+            console.log(`Percentual de votos nulos: ${(nulos/eleitores)*100}%`);
+            console.log(`Percentual de votos válidos: ${(validos/eleitores)*100}%`);
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

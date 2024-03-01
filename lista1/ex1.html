@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+
+    <script>
+        // Variavel para armazenar o total inicial 
+        let total = 0;
+
+        // Loop para identificar as notas  
+        for (let i = 1; i <= 4; i++) {
+            const nota = Number(prompt('Informe a nota do aluno: '));
+
+            if (isNaN(nota) || nota > 10 || nota < 0) {
+                console.log('Nota inválida, reinicie o programa');
+                break;
+            }
+
+            console.log(nota);
+            total += nota;
+        }
+
+        if (isNaN(total)) {
+            console.log('Não foi possível calcular a média devido a notas inválidas.');
+        } else {
+            // Media 
+            const media = total / 4;
+
+            console.log(`Média: ${media.toFixed(2)}`);
+
+            if (media >= 7) {
+                console.log('Aprovado');
+            } else {
+                console.log('Reprovado');
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
