@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+
+    <script>
+
+        // Entrada de valorees fixos.
+        const carroVendido = parseInt(prompt('Quantos carros o funcionário vendeu: '))
+        const salario = parseFloat(prompt('Informe o salário do funcionário: '))
+        const comissao = parseInt(prompt('Qual a comissão dele? '))
+
+        // Iniciando variável para calcular o total.
+        let totalCarros = 0
+        let valorCarro = 0
+        let comissaoValor = 0
+        let totalComissoes = 0
+
+        // Loop para identicar o valor de cada carro, e a soma deles.
+        for (i = 1; i <= carroVendido; i++) {
+
+            valorCarro = parseFloat(prompt(`Informe o valor do carro ${i}: `))
+            console.log(`Valor do Carro ${i}: ${valorCarro} R$`);
+
+            // Calculando a comissão por cada carro
+            const comissaoValor = valorCarro * (comissao / 100)
+            const comissaoValorCorrigido = comissaoValor
+            console.log(`Porcentagem da comissão: ${comissao}%`);
+            console.log(`Valor da comissão: ${parseFloat(comissaoValorCorrigido)} R$`);
+            console.log(' ');
+
+            // Somando os valores dos carros
+            totalCarros += valorCarro
+            totalComissoes += comissaoValor
+
+        }
+
+        // Porcentagem de 5% na soma dos valores de todos os carros
+        VendasTotais = totalCarros * 0.05
+
+        // Exibindo valores de somas e salário
+        console.log(`Valor de 5% da venda dos carros: ${VendasTotais} R$`);
+        console.log(`Soma das comissões de ${comissao}% sobre cada venda: ${totalComissoes} R$`);
+        console.log(`Salário Fixo: ${salario} R$`);
+
+        // Calculando salário total
+        salarioTotal = VendasTotais + totalComissoes + salario
+
+        console.log(`O vendedor ganhou no mês um salário total de: ${salarioTotal} R$`);
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

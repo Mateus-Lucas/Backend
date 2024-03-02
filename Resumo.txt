@@ -1,0 +1,11 @@
+1 - Instalar o express
+npm i express
+
+2 - Instalar o nodeman 
+npm i -g nodemon 
+
+3 - padrão para rotas
+app.get('/hello', function (req, res) {
+    res.send('Chegou a resposta')
+})
+
