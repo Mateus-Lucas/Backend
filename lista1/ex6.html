@@ -27,9 +27,8 @@
 
             // Calculando a comissão por cada carro
             const comissaoValor = valorCarro * (comissao / 100)
-            const comissaoValorCorrigido = comissaoValor
             console.log(`Porcentagem da comissão: ${comissao}%`);
-            console.log(`Valor da comissão: ${parseFloat(comissaoValorCorrigido)} R$`);
+            console.log(`Valor da comissão: ${parseFloat(comissaoValor)} R$`);
             console.log(' ');
 
             // Somando os valores dos carros
@@ -47,7 +46,7 @@
         console.log(`Salário Fixo: ${salario} R$`);
 
         // Calculando salário total
-        salarioTotal = VendasTotais + totalComissoes + salario
+        const salarioTotal = VendasTotais + totalComissoes + salario
 
         console.log(`O vendedor ganhou no mês um salário total de: ${salarioTotal} R$`);
 
